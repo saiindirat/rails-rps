@@ -1,0 +1,17 @@
+<h1>You played Rock!</h1>
+
+<p>Computer played <%= @random_move.capitalize %></p>
+
+<% if @random_move == "rock" %>
+  <p>It's a tie!</p>
+<% elsif @random_move == "paper" %>
+  <p>You lose!</p>
+<% else %>
+  <p>You win!</p>
+<% end %>
+
+<hr>
+<p><a href="/">Rules</a></p>
+<p><a href="/rock">Play Rock</a></p>
+<p><a href="/paper">Play Paper</a></p>
+<p><a href="/scissors">Play Scissors</a></p>

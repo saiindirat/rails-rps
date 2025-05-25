@@ -1,12 +1,12 @@
-<h1>You played rock!</h1>
+<h1>You played scissors!</h1>
 
 <% @computer_move = ["rock", "paper", "scissors"].sample %>
 
 <p>They played <%= @computer_move %>!</p>
 
-<% if @computer_move == "rock" %>
+<% if @computer_move == "scissors" %>
   <p>We tied!</p>
-<% elsif @computer_move == "paper" %>
+<% elsif @computer_move == "rock" %>
   <p>We lost!</p>
 <% else %>
   <p>We won!</p>
